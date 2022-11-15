@@ -13,7 +13,7 @@ import {
   useDisclosure,
   Avatar,
 } from "@chakra-ui/react";
-import Link from "next/Link";
+import Link from "next/link";
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
