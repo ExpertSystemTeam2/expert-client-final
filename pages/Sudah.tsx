@@ -388,14 +388,14 @@ const Sudah = () => {
           {hasil === "INFP" && <Infp />}
           {hasil === "ENFJ" && <Enfj />}
           {hasil === "ENFP" && <Enfp />}
-          {/* {hasil === "ISTJ" && <Istj />}
+          {hasil === "ISTJ" && <Istj />}
           {hasil === "ISFJ" && <Isfj />}
           {hasil === "ESTJ" && <Estj />}
           {hasil === "ESFJ" && <Esfj />}
-          {hasil === "ISTP" && <Isfp />}
+          {hasil === "ISTP" && <Istp />}
           {hasil === "ISFP" && <Isfp />}
           {hasil === "ESTP" && <Estp />}
-          {hasil === "ESFP" && <Esfp />} */}
+          {hasil === "ESFP" && <Esfp />}
         </VStack>
       </Flex>
     </>
@@ -633,5 +633,250 @@ const Enfj = () => {
     </>
   );
 };
+
+const Istj = () => {
+  const istj = [
+    { id: 0, job: "Akuntan" },
+    { id: 1, job: "Ahli Logistik" },
+    { id: 2, job: "Manager Finansial" },
+    { id: 3, job: "Purchasing" },
+    { id: 4, job: "Document Administrator" },
+    { id: 5, job: "Sales" },
+    { id: 6, job: "Arsitek" },
+    { id: 7, job: "Ahli Agrikultur" },
+    { id: 8, job: "Teknisi Mesin" },
+    { id: 9, job: "Teknisi Sipil" },
+    { id: 10, job: "Ahli Geologi" },
+    { id: 11, job: "Operator Mesin" },
+    { id: 12, job: "Atlit" },
+  ];
+  return (
+    <>
+      {istj.map((i: any) => {
+        return (
+          <>
+            <UnorderedList>
+              <ListItem key={i.id}>{i.job}</ListItem>
+            </UnorderedList>
+          </>
+        );
+      })}
+    </>
+  );
+};
+
+const Isfj = () => {
+  const isfj = [
+    { id: 0, job: "Pekerja Sosial" },
+    { id: 1, job: "Ahli Agrikultur" },
+    { id: 2, job: "Forensik" },
+    { id: 3, job: "Trainer" },
+    { id: 4, job: "Dokter" },
+    { id: 5, job: "Perawat" },
+    { id: 6, job: "Apoteker" },
+    { id: 7, job: "Dokter Anak-anak" },
+    { id: 8, job: "Guru Sekolah" },
+    { id: 9, job: "Pustakawan" },
+    { id: 10, job: "Customer Service" },
+    { id: 11, job: "Pembimbing Konseling" },
+    { id: 12, job: "Pemadam Kebakaran" },
+  ];
+  return (
+    <>
+      {isfj.map((i: any) => {
+        return (
+          <>
+            <UnorderedList>
+              <ListItem key={i.id}>{i.job}</ListItem>
+            </UnorderedList>
+          </>
+        );
+      })}
+    </>
+  );
+};
+
+const Estj = () => {
+  const estj = [
+    { id: 0, job: "Manager Marketing" },
+    { id: 1, job: "Sales" },
+    { id: 2, job: "Credit Analyst" },
+    { id: 3, job: "Staff Hotel" },
+    { id: 4, job: "Petugas Militer" },
+    { id: 5, job: "Polisi" },
+    { id: 6, job: "Jaksa" },
+    { id: 7, job: "Koki" },
+    { id: 8, job: "Hakim" },
+    { id: 9, job: "Apoteker" },
+    { id: 10, job: "Dokter Gigi" },
+    { id: 11, job: "Database Administrator" },
+  ];
+  return (
+    <>
+      {estj.map((i: any) => {
+        return (
+          <>
+            <UnorderedList>
+              <ListItem key={i.id}>{i.job}</ListItem>
+            </UnorderedList>
+          </>
+        );
+      })}
+    </>
+  );
+};
+
+const Esfj = () => {
+  const esfj = [
+    { id: 0, job: "Guru Sekolah" },
+    { id: 1, job: "Pembimbing Konseling" },
+    { id: 2, job: "Polisi" },
+    { id: 3, job: "Legal" },
+    { id: 4, job: "Dokter" },
+    { id: 5, job: "Perawat" },
+    { id: 6, job: "Trainer" },
+    { id: 7, job: "Purchasing" },
+    { id: 8, job: "Manager HRD" },
+    { id: 9, job: "Sales" },
+    { id: 10, job: "Manager Bisnis" },
+    { id: 11, job: "Reporter" },
+  ];
+  return (
+    <>
+      {esfj.map((i: any) => {
+        return (
+          <>
+            <UnorderedList>
+              <ListItem key={i.id}>{i.job}</ListItem>
+            </UnorderedList>
+          </>
+        );
+      })}
+    </>
+  );
+};
+
+const Istp = () => {
+  const istp = [
+    { id: 0, job: "Teknisi Mesin" },
+    { id: 1, job: "Arsitek" },
+    { id: 2, job: "Teknisi Kehutanan" },
+    { id: 3, job: "Fotografer" },
+    { id: 4, job: "Security Analyst" },
+    { id: 5, job: "Software Developer" },
+    { id: 6, job: "Software Tester" },
+    { id: 7, job: "Ahli Ekonomi" },
+    { id: 8, job: "Pilot" },
+    { id: 9, job: "Petugas Militer" },
+    { id: 10, job: "Pemadam Kebakaran" },
+  ];
+  return (
+    <>
+      {istp.map((i: any) => {
+        return (
+          <>
+            <UnorderedList>
+              <ListItem key={i.id}>{i.job}</ListItem>
+            </UnorderedList>
+          </>
+        );
+      })}
+    </>
+  );
+};
+
+const Isfp = () => {
+  const isfp = [
+    { id: 0, job: "Desainer" },
+    { id: 1, job: "Koki" },
+    { id: 2, job: "Teknisi Mesin" },
+    { id: 3, job: "Teknisi Perhutanan" },
+    { id: 4, job: "Perawat" },
+    { id: 5, job: "Trainer" },
+    { id: 6, job: "Manager Bisnis" },
+    { id: 7, job: "Apoteker" },
+    { id: 8, job: "Dokter Hewan" },
+    { id: 9, job: "Ahli Botani" },
+    { id: 10, job: "Polisi" },
+    { id: 11, job: "Penerjemah" },
+    { id: 12, job: "Ahli Koreografi" },
+  ];
+  return (
+    <>
+      {isfp.map((i: any) => {
+        return (
+          <>
+            <UnorderedList>
+              <ListItem key={i.id}>{i.job}</ListItem>
+            </UnorderedList>
+          </>
+        );
+      })}
+    </>
+  );
+};
+
+const Estp = () => {
+  const estp = [
+    { id: 0, job: "Inspektor Bangunan" },
+    { id: 1, job: "Teknisi Mesin" },
+    { id: 2, job: "Wirausaha" },
+    { id: 3, job: "Trainer" },
+    { id: 4, job: "Manager Marketing" },
+    { id: 5, job: "Manager Hotel" },
+    { id: 6, job: "Petugas Militer" },
+    { id: 7, job: "Pilot" },
+    { id: 8, job: "Pramugari" },
+    { id: 9, job: "Bartender" },
+    { id: 10, job: "Manager Properti" },
+    { id: 11, job: "Developer Tanah" },
+  ];
+  return (
+    <>
+      {estp.map((i: any) => {
+        return (
+          <>
+            <UnorderedList>
+              <ListItem key={i.id}>{i.job}</ListItem>
+            </UnorderedList>
+          </>
+        );
+      })}
+    </>
+  );
+};
+
+const Esfp = () => {
+  const esfp = [
+    { id: 0, job: "perawat" },
+    { id: 1, job: "guru sekolah" },
+    { id: 2, job: "Pekerja Sosial" },
+    { id: 3, job: "Manager Retail" },
+    { id: 4, job: "Purchasing" },
+    { id: 5, job: "Sales" },
+    { id: 6, job: "Pramugari" },
+    { id: 7, job: "Koki" },
+    { id: 8, job: "Desainer" },
+    { id: 9, job: "Aktor" },
+    { id: 10, job: "Fotografer" },
+    { id: 11, job: "Polisi" },
+    { id: 12, job: "Event Organizer"},
+    { id: 13, job: "Staff Restoran" },
+  ];
+  return (
+    <>
+      {esfp.map((i: any) => {
+        return (
+          <>
+            <UnorderedList>
+              <ListItem key={i.id}>{i.job}</ListItem>
+            </UnorderedList>
+          </>
+        );
+      })}
+    </>
+  );
+};
+
 
 export default Sudah;
