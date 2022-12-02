@@ -1,6 +1,5 @@
 import {
   Flex,
-  useColorMode,
   useColorModeValue,
   VStack,
   Text,

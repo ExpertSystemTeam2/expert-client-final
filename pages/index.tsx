@@ -1,7 +1,6 @@
 import Navbar from "../Components/Navbar";
 import {
   Flex,
-  useColorMode,
   useColorModeValue,
   VStack,
   Text,
