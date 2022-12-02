@@ -72,7 +72,7 @@ const radioOpt = [
   },
 ];
 
-const IntroEx = (props: any) => {
+const IntroEx = () => {
   const Data: question[] = [
     {
       idx: 1,
@@ -298,7 +298,7 @@ const IntroEx = (props: any) => {
       cfOld2 = cfCombine2;
 
       var cfOld3: number = cfOld2;
-      var cfCombine3: number = (cfOld3 + res4) * (1 - cfOld2);
+      var cfCombine3: number = (cfOld3 + res4) * (1 - cfOld3);
       cfOld3 = cfCombine3;
 
       var cfOld4: number = cfOld3;
@@ -358,20 +358,20 @@ const IntroEx = (props: any) => {
       }
 
       //Perceiving / Judging Section
-      var cfOld13: number = res16;
-      var cfCombine13: number = (cfOld13 + res17) * (1 - cfOld13);
+      var cfOld13: number = res15;
+      var cfCombine13: number = (cfOld13 + res16) * (1 - cfOld13);
       cfOld13 = cfCombine13;
 
       var cfOld14: number = cfOld13;
-      var cfCombine14: number = (cfOld14 + res18) * (1 - cfOld14);
+      var cfCombine14: number = (cfOld14 + res17) * (1 - cfOld14);
       cfOld14 = cfCombine14;
 
       var cfOld15: number = cfOld14;
-      var cfCombine15: number = (cfOld15 + res19) * (1 - cfOld15);
+      var cfCombine15: number = (cfOld15 + res18) * (1 - cfOld15);
       cfOld15 = cfCombine15;
 
       var cfOld16: number = cfOld15;
-      var cfCombine16: number = (cfOld16 + res20) * (1 - cfOld16);
+      var cfCombine16: number = (cfOld16 + res19) * (1 - cfOld16);
       cfOld16 = cfCombine16;
 
       if (cfOld16 < 0.5) {
