@@ -7,7 +7,6 @@ import {
   Text,
   Select,
   Box,
-  HStack,
   ListItem,
   UnorderedList,
 } from "@chakra-ui/react";
@@ -860,7 +859,7 @@ const Esfp = () => {
     { id: 9, job: "Aktor" },
     { id: 10, job: "Fotografer" },
     { id: 11, job: "Polisi" },
-    { id: 12, job: "Event Organizer"},
+    { id: 12, job: "Event Organizer" },
     { id: 13, job: "Staff Restoran" },
   ];
   return (
@@ -877,6 +876,5 @@ const Esfp = () => {
     </>
   );
 };
-
 
 export default Sudah;

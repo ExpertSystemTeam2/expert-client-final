@@ -287,92 +287,113 @@ const IntroEx = () => {
       setValue18(data.value18);
       setValue19(data.value19);
       setValue20(data.value20);
-
+      console.log("----");
       //Introvert / Extrovert Section
       var cfOld: number = res;
+      console.log(cfOld);
       var cfCombine: number = cfOld + res2 * (1 - cfOld);
       cfOld = cfCombine;
+      console.log(cfOld);
 
       var cfOld2: number = cfOld;
       var cfCombine2: number = cfOld2 + res3 * (1 - cfOld2);
       cfOld2 = cfCombine2;
+      console.log(cfOld2);
 
       var cfOld3: number = cfOld2;
       var cfCombine3: number = cfOld3 + res4 * (1 - cfOld3);
       cfOld3 = cfCombine3;
+      console.log(cfOld3);
 
       var cfOld4: number = cfOld3;
       var cfCombine4: number = cfOld4 + res5 * (1 - cfOld4);
       cfOld4 = cfCombine4;
+      console.log(cfOld4);
 
       if (cfOld4 < 0.5) {
         setHuruf("e");
       } else {
         setHuruf("i");
       }
-
+      console.log("----");
       //Sensing / Intuition Section
       var cfOld5: number = res6;
+      console.log(cfOld5);
       var cfCombine5: number = cfOld5 + res7 * (1 - cfOld5);
       cfOld5 = cfCombine5;
+      console.log(cfOld5);
 
       var cfOld6: number = cfOld5;
       var cfCombine6: number = cfOld6 + res8 * (1 - cfOld6);
       cfOld6 = cfCombine6;
+      console.log(cfOld6);
 
       var cfOld7: number = cfOld6;
       var cfCombine7: number = cfOld7 + res9 * (1 - cfOld7);
       cfOld7 = cfCombine7;
+      console.log(cfOld7);
 
       var cfOld8: number = cfOld7;
       var cfCombine8: number = cfOld8 + res10 * (1 - cfOld8);
       cfOld8 = cfCombine8;
+      console.log(cfOld8);
 
       if (cfOld8 < 0.5) {
         setHuruf2("n");
       } else {
         setHuruf2("s");
       }
+      console.log("----");
 
       //Thinking / Feeling Section
       var cfOld9: number = res11;
+      console.log(cfOld9);
       var cfCombine9: number = cfOld9 + res12 * (1 - cfOld9);
       cfOld9 = cfCombine9;
+      console.log(cfOld9);
 
       var cfOld10: number = cfOld9;
       var cfCombine10: number = cfOld10 + res13 * (1 - cfOld10);
       cfOld10 = cfCombine10;
+      console.log(cfOld10);
 
       var cfOld11: number = cfOld10;
       var cfCombine11: number = cfOld11 + res14 * (1 - cfOld11);
       cfOld11 = cfCombine11;
+      console.log(cfOld11);
 
       var cfOld12: number = cfOld11;
       var cfCombine12: number = cfOld12 + res15 * (1 - cfOld12);
       cfOld12 = cfCombine12;
+      console.log(cfOld12);
 
       if (cfOld12 < 0.5) {
         setHuruf3("f");
       } else {
         setHuruf3("t");
       }
-
+      console.log("----");
       //Perceiving / Judging Section
       var cfOld13: number = res16;
+      console.log(cfOld13);
       var cfCombine13: number = cfOld13 + res17 * (1 - cfOld13);
       cfOld13 = cfCombine13;
+      console.log(cfOld13);
 
       var cfOld14: number = cfOld13;
       var cfCombine14: number = cfOld14 + res18 * (1 - cfOld14);
       cfOld14 = cfCombine14;
+      console.log(cfOld14);
 
       var cfOld15: number = cfOld14;
       var cfCombine15: number = cfOld15 + res19 * (1 - cfOld15);
       cfOld15 = cfCombine15;
+      console.log(cfOld15);
 
       var cfOld16: number = cfOld15;
       var cfCombine16: number = cfOld16 + res20 * (1 - cfOld16);
       cfOld16 = cfCombine16;
+      console.log(cfOld16);
 
       if (cfOld16 < 0.5) {
         setHuruf4("j");
@@ -380,6 +401,7 @@ const IntroEx = () => {
         setHuruf4("p");
       }
 
+      console.log(cfOld4, cfOld8, cfOld12, cfOld16);
     } catch (err: any) {
       console.log(err);
     }
